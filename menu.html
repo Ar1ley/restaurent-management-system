@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h3>Menu Management</h3>
+
+        <!-- Add New Menu Item -->
+        <form action="addMenuItem" method="post" class="mt-3 mb-4">
+            <div class="row g-2">
+                <!-- Dropdown for Menu Items -->
+                <div class="col">
+                    <select name="itemName" class="form-select" required>
+                        <option value="">Select Item</option>
+                        <option value="Item 1">Chicken Burger</option>
+                        <option value="Item 2">Lamb Burger</option>
+                        <option value="Item 3">Beef Burger</option>
+                        <option value="Item 4">Margarita Pizza</option>
+                        <option value="Item 5">Peri Peri Chicken Pizza</option>
+                        <option value="Item 6">Deluxe Chicken Pizza</option>
+                        <option value="Item 7">Peperori Pizza</option>
+                        <option value="Item 8">BBQ Chicken Pizza</option>
+                        <option value="Item 9">Salade</option>
+                        <option value="Item 10">French Fries</opt1ion>
+                        <option value="Item 11">Crispy Chicken</option>
+                        <option value="Item 12">Water</option>
+                        <option value="Item 13">Fuse Tea</option>
+                        <option value="Item 14">Sprite</option>
+                        <option value="Item 15">Coca Cola</option>
+                        <option value="Item 16">Fruit Juice</option>
+                        <option value="Item 17">Beer</option>
+                        <option value="Item 18">Whiskey</opt1ion>
+                        <option value="Item 19">Wine</option>
+                        <option value="Item 20">Tips</option>
+                    </select>
+                </div>
+
+                <!-- Dropdown for Category -->
+                <div class="col">
+                    <select name="category" class="form-select" required>
+                        <option value="">Select Category</option>
+                        <option value="Dine In">Dine In</option>
+                        <option value="Take Away">Take Away</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <input type="number" name="price" class="form-control" placeholder="Price" step="0.01" required>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-success w-100">Add</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Menu Items Table -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>
+
